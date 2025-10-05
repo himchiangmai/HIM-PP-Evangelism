@@ -29,7 +29,7 @@
     <iframe name="hiddenFrame" width="0" height="0" style="display: none;"></iframe>
     <main class="form-signin">
         
-        <form id="updateForm" method="POST" class="needs-validation" novalidate action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfQhV5kSqWshUCjPqfQzjStPwKN_wgyRWKTzytc2hTMmVZwtg/formResponse" target="hiddenFrame">
+        <form id="updateForm" method="POST" class="needs-validation" novalidate action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScDN-aXzq9cDXp4Ua-v_e7lX7Hu31pxJGSxLU2HiUkQeFjTYw/formResponse" target="hiddenFrame">
 
             <div class="pb-2">
                 <img src="logo.png" alt="" class="text-center" width="50" height="50">
@@ -43,176 +43,119 @@
                 <a href="hi5.html" class="btn btn-outline-primary btn-sm w-100">Hi5</a>
             </div>
             <hr />
-            <h2 class="h5 m-0 fw-bold">ข้อมูลการมาคริสตจักร/LG</h2>
+            <h2 class="h5 m-0 fw-bold">ข้อมูลมาคริสตจักร / LG</h2>
             <hr />
-
             <div class="row">
                 <div class="col-sm-12 pb-2 pt-2 flex-split">
                     <div class="form-flex flex-2">
                         <label for="Name" class="form-label header">ชื่อเล่น <span class="text-gray fs-7"></span></label>
                         <input id="Name" type="text" class="form-control w-150px" placeholder="ระบุชื่อเล่น" required
-                            name="entry.1668707861" />
+                            name="entry.1955450695" />
                     </div>
-                    <div class="form-flex flex-1">
-                        <label for="Date" class="form-label header">วันที่ประกาศ</label>
-                        <input id="Date" class="form-control w-140px" type="date" required placeholder="Date" onclick="this.showPicker()"
-                            name="entry.1751750270"/>
-                    </div>
-
                 </div>
 
                 
                 <div class="col-sm-12 pb-2 pt-2 left">
                     <div>
-                        <label class="header">สถานภาพ</label>
+                        <label class="header underline">การมา LG</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.609289358" id="inlineRadio1" value="เด็ก (0-6 ปี)" required>
-                        <label class="form-check-label" for="inlineRadio1">เด็ก (0-6 ปี)</label>
+                        <input class="form-check-input" type="checkbox" value="แจกใบปลิว" id="LGCheck">
+                        <label class="form-check-label" for="LGCheck">ใช่</label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.609289358" id="inlineRadio2" value="เด็ก (7-12 ปี)" required>
-                        <label class="form-check-label" for="inlineRadio2">เด็ก (7-12 ปี)</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.609289358" id="inlineRadio3" value="นักเรียน (13-18 ปี)" required>
-                        <label class="form-check-label" for="inlineRadio3">นักเรียน (13-18 ปี)</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.609289358" id="inlineRadio4" value="นักศึกษา (18 ปีขึ้นไป)" required>
-                        <label class="form-check-label" for="inlineRadio4">นักศึกษา (18 ปีขึ้นไป)</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.609289358" id="inlineRadio5" value="คนทำงาน (อายุต่ำกว่า 35 ปี)" required>
-                        <label class="form-check-label" for="inlineRadio5">คนทำงาน (อายุต่ำกว่า 35 ปี)</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.609289358" id="inlineRadio6" value="คนทำงาน (อายุ 35-60 ปี)" required>
-                        <label class="form-check-label" for="inlineRadio6">คนทำงาน (อายุ 35-60 ปี)</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.609289358" id="inlineRadio7" value="ผู้สูงอายุ (60 ปีขึ้นไป)" required>
-                        <label class="form-check-label" for="inlineRadio7">ผู้สูงอายุ (60 ปีขึ้นไป)</label>
+                    <div id="LG-Zone" style="display:none">
+                        <div class="form-flex flex-1">
+                            <label for="Date" class="form-label header">วันที่</label>
+                            <input id="Date" class="form-control w-150px" type="date" placeholder="Date" onclick="this.showPicker()"
+                                name="entry.1677383447"/>
+                        </div>
+                        <div>
+                            <label class="header header">วิธีการ</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input LGRadio" type="radio" name="entry.1858733654" id="inlineRadio1" value="มาด้วยตนเอง">
+                            <label class="form-check-label" for="inlineRadio1">มาด้วยตนเอง</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input LGRadio" type="radio" name="entry.1858733654" id="inlineRadio2" value="มีผู้พามา">
+                            <label class="form-check-label" for="inlineRadio2">มีผู้พามา</label>
+                        </div>
+                        <div class="col-sm-12 pb-2 pt-2">
+                            <input type="text" class="form-control" placeholder="ระบุผู้พามา LG / ผู้เชิญชวน"
+                                name="entry.1784933" />
+                        </div>
                     </div>
                 </div>
 
 
-                <div class="col-sm-12 pb-2 pt-2 left">
-                    <label class="header">การประกาศ</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1212405589" value="แจกใบปลิว" id="check1">
-                        <label class="form-check-label" for="check1">แจกใบปลิว</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1212405589" value="ใช้สื่อ Online" id="check2">
-                        <label class="form-check-label" for="check2">ใช้สื่อ Online</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1212405589" value="สร้างสัมพันธ์ / พูดคุยทั่วไป" id="check3">
-                        <label class="form-check-label" for="check3">สร้างสัมพันธ์ / พูดคุยทั่วไป</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1212405589" value="เล่าพระกิตติคุณ" id="check4">
-                        <label class="form-check-label" for="check4">เล่าพระกิตติคุณ</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1212405589" value="เล่าคำพยาน" id="check5">
-                        <label class="form-check-label" for="check5">เล่าคำพยาน</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1212405589" value="อธ.เผื่อ" id="check6">
-                        <label class="form-check-label" for="check6">อธ.เผื่อ</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1212405589" value="นำรับเชื่อ" id="check7">
-                        <label class="form-check-label" for="check7">นำรับเชื่อ</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1212405589" value="ชวนมา LG / คริสตจักร" id="check8">
-                        <label class="form-check-label" for="check8">ชวนมา LG / คริสตจักร</label>
-                    </div>
-                </div>
+
+
 
                 <div class="col-sm-12 pb-2 pt-2 left">
                     <div>
-                        <label class="header">ท่าที</label>
+                        <label class="header underline">การมาคริสตจักร</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.1083106702" id="response1" value="ประเมินไม่ได้" required>
-                        <label class="form-check-label" for="response1">ประเมินไม่ได้</label>
+                        <input class="form-check-input" type="checkbox" value="แจกใบปลิว" id="ChurchCheck">
+                        <label class="form-check-label" for="ChurchCheck">ใช่</label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.1083106702" id="response2" value="ปฏิเสธ" required>
-                        <label class="form-check-label" for="response2">ปฏิเสธ</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.1083106702" id="response3" value="ท่าทีเฉยๆ / ไม่มีการตอบสนอง" required>
-                        <label class="form-check-label" for="response3">ท่าทีเฉยๆ / ไม่มีการตอบสนอง</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.1083106702" id="response4" value="รับฟังดี / มีการตอบสนอง" required>
-                        <label class="form-check-label" for="response4">รับฟังดี / มีการตอบสนอง</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.1083106702" id="response5" value="ตอบรับมา LG / คริสตจักร
-" required>
-                        <label class="form-check-label" for="response5">ตอบรับมา LG / คริสตจักร
-</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="entry.1083106702" id="response6" value="เปิดใจรับเชื่อ" required>
-                        <label class="form-check-label" for="response6">เปิดใจรับเชื่อ</label>
+                    <div id="Church-Zone" style="display:none">
+                        <div class="form-flex flex-1">
+                            <label for="DateChurch" class="form-label header">วันที่</label>
+                            <input id="DateChurch" class="form-control w-150px" type="date" placeholder="Date" onclick="this.showPicker()"
+                                name="entry.1431863990"/>
+                        </div>
+                        <div>
+                            <label class="header">วิธีการ</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input ChurchRadio" type="radio" name="entry.763973876" id="inlineChurch1" value="มาด้วยตนเอง">
+                            <label class="form-check-label" for="inlineChurch1">มาด้วยตนเอง</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input ChurchRadio" type="radio" name="entry.763973876" id="inlineChurch2" value="มีผู้พามา">
+                            <label class="form-check-label" for="inlineChurch2">มีผู้พามา</label>
+                        </div>
+                        <div class="col-sm-12 pb-2 pt-2">
+                            <input type="text" class="form-control" placeholder="ระบุผู้พามาคริสตจักร / ผู้เชิญชวน"
+                                name="entry.1244771109" />
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 pb-2 pt-2">
-                    <label for="by" class="form-label header">ประกาศโดย<span class="text-gray fs-7"></span></label>
-                    <input id="by" type="text" class="form-control" placeholder="ระบุชื่อเล่น" name="entry.710282872" required
-                        name="by" />
-                </div>
-
+        
 
                 <div class="col-sm-12 pb-2 pt-2 left">
-                    <label class="header">ข้อมูลการติดต่อ</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1106802519" value="ที่อยู่" id="contact1">
-                        <label class="form-check-label" for="contact1">ที่อยู่</label>
+                    <div>
+                        <label class="header">สถานะ</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1106802519" value="เบอร์โทรศัพท์" id="contact2">
-                        <label class="form-check-label" for="contact2">เบอร์โทรศัพท์</label>
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus1" value="ผจ. (มาครั้งแรก)" required>
+                        <label class="form-check-label" for="inlineStatus1">ผจ. (มาครั้งแรก)</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1106802519" value="อีเมล" id="contact3">
-                        <label class="form-check-label" for="contact3">อีเมล</label>
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus2" value="ผจ.2 (มาหลายครั้ง)" required>
+                        <label class="form-check-label" for="inlineStatus2">ผจ.2 (มาหลายครั้ง)</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1106802519" value="Facebook" id="contact4">
-                        <label class="form-check-label" for="contact4">Facebook</label>
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus3" value="คย. (ผู้เชื่อ / คริสเตียนต่างองค์กร)" required>
+                        <label class="form-check-label" for="inlineStatus3">คย. (ผู้เชื่อ / คริสเตียนต่างองค์กร)</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1106802519" value="Line" id="contact5">
-                        <label class="form-check-label" for="contact5">Line</label>
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus4" value="พย. (พี่น้องคริสเตียนในองค์กร)" required>
+                        <label class="form-check-label" for="inlineStatus4">พย. (พี่น้องคริสเตียนในองค์กร)</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1106802519" value="IG" id="contact6">
-                        <label class="form-check-label" for="contact6">IG</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="entry.1106802519" value="อื่นๆ" id="contact8">
-                        <label class="form-check-label" for="contact8">อื่นๆ</label>
-                    </div>
-
-                    <div class="col-sm-12 pb-2 pt-2 left form-split" id="contact_form" style="display:none">
-                        <input id="contact_detail" type="text" class="form-control" 
-                            placeholder="ระบุข้อมูลการติดต่อ" disabled name="entry.533033771" />
+                        <input class="form-check-input" type="radio" name="entry.1558750619" id="inlineStatus5" value="คนเก่า" required>
+                        <label class="form-check-label" for="inlineStatus5">คนเก่า</label>
                     </div>
                 </div>
+
          
                 <div class="col-sm-12 pb-2 pt-2">
-                    <label for="addition" class="form-label header">รายละเอียดเพิ่มเติม <span class="text-gray fs-7">(ถ้ามี)</span></label>
-                    <input id="addition" type="text" class="form-control" placeholder="ชั้นปี / คณะ / อาชีพ / ความสนใจพิเศษ"
-                        name="entry.238952744" />
+                    <label for="addition" class="form-label header">คย. / พย. จากคริสตจักรใด <span class="text-gray fs-7">(ถ้ามี)</span></label>
+                    <input id="addition" type="text" class="form-control" placeholder="ตัวอย่าง: ไมตรีจิตร"
+                        name="entry.1132204736" />
                 </div>
 
             </div>
@@ -313,26 +256,38 @@
 
 
 
-
     <script>
-
-        $("#contact8").click(function (){
+        $("#LGCheck").change(function(){
             if ($(this).is(':checked')) {
-                $("#contact_form").css("display", "");
-                $('#contact_detail').attr('required', true);
-                $("#contact_detail").removeAttr('disabled');
+                $("#LG-Zone").show();
+                $("#Date").attr('required', true);
+                $('.LGRadio').attr('required', true);
             } else {
-                $("#contact_form").css("display", "none");
-                $('#contact_detail').removeAttr('required');
-                $("#contact_detail").attr('disabled', true);
+                $("#LG-Zone").hide();
+                $("#Date").attr('required', false);
+                $('.LGRadio').removeAttr('required');
             }
         });
+
+        $("#ChurchCheck").change(function(){
+            if ($(this).is(':checked')) {
+                $("#Church-Zone").show();
+                $("#DateChurch").attr('required', true);
+                $('.ChurchRadio').attr('required', true);
+            } else {
+                $("#Church-Zone").hide();
+                $("#DateChurch").attr('required', false);
+                $('.ChurchRadio').removeAttr('required');
+            }
+        });
+    </script>
+   
+
+           
+
 
     </script>
 
 </body>
 
 </html>
-
-
-
